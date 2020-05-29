@@ -5,10 +5,16 @@ function boolToWord(bool) {
   } else return 'No';
 }
 
-Test.assertEquals(boolToWord(true), 'Yes');
-Test.assertEquals(boolToWord(false), 'No');
+boolToWord(true);
+boolToWord(false);
 
 
-// 
+// Remove first and last character of a string.
+function removeChar(str){
+ let words = str.slice(1, -1)
+ return words;
+};
 
+removeChar('eloquent');
+removeChar('country');
 
